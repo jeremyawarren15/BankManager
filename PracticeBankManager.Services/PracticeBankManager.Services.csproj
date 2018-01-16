@@ -53,11 +53,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeBankManager.Data\PracticeBankManager.Data.csproj">
+      <Project>{EE7E1809-4253-46F3-84B5-D4A55F13501D}</Project>
+      <Name>PracticeBankManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PracticeBankManager.Models\PracticeBankManager.Models.csproj">
+      <Project>{6F96462D-0EB2-4201-A5BF-23E9E26A4272}</Project>
+      <Name>PracticeBankManager.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
