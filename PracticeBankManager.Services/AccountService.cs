@@ -87,6 +87,17 @@ namespace PracticeBankManager.Services
                     .FirstOrDefault();
         }
 
+        private bool OwnsAccount(ApplicationDbContext context, int accountId)
+        {
+            var account =
+                context
+                    .AccountRelationships
+                    .Where(ar => ar.UserId == _userId &&
+                                 ar.AccountId == accountId);
+
+            return account.ToList().Count() == 1;
+        }
+
         public AccountDetail GetAccount(int accountId)
         {
             using (var ctx = new ApplicationDbContext())
@@ -122,6 +133,35 @@ namespace PracticeBankManager.Services
                 var account = GetAccount(ctx, accountId);
 
                 account.AccountBalance += changeAmount;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool AddSecondaryUser(int accountId, string userEmail)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                if (!OwnsAccount(ctx, accountId))
+                    return false;
+
+                var secondAccount =
+                    ctx
+                        .Users
+                        .SingleOrDefault(u => u.Email == userEmail);
+
+                if (secondAccount == null)
+                    return false;
+
+                var relationship = new AccountRelationship()
+                {
+                    AccountId = accountId,
+                    UserId = Guid.Parse(secondAccount.Id)
+                };
+
+                ctx
+                    .AccountRelationships
+                    .Add(relationship);
 
                 return ctx.SaveChanges() == 1;
             }
