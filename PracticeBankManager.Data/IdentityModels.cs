@@ -27,6 +27,10 @@ namespace PracticeBankManager.Data
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<AccountRelationship> AccountRelationships { get; set; }
+        public DbSet<Transactions> Transactions { get; set; }
         
         public static ApplicationDbContext Create()
         {
