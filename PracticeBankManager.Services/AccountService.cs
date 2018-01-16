@@ -145,23 +145,55 @@ namespace PracticeBankManager.Services
                 if (!OwnsAccount(ctx, accountId))
                     return false;
 
-                var secondAccount =
+                var secondUser =
                     ctx
                         .Users
                         .SingleOrDefault(u => u.Email == userEmail);
 
-                if (secondAccount == null)
+                if (secondUser == null)
                     return false;
 
                 var relationship = new AccountRelationship()
                 {
                     AccountId = accountId,
-                    UserId = Guid.Parse(secondAccount.Id)
+                    UserId = Guid.Parse(secondUser.Id)
                 };
 
                 ctx
                     .AccountRelationships
                     .Add(relationship);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool RemoveUserFromAccount(int accountId, string userEmail)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                if (!OwnsAccount(ctx, accountId))
+                    return false;
+
+                var secondUser =
+                    ctx
+                        .Users
+                        .SingleOrDefault(u => u.Email == userEmail);
+
+                if (secondUser == null)
+                    return false;
+
+                var relationship =
+                    ctx
+                        .AccountRelationships
+                        .SingleOrDefault(ar => ar.AccountId == accountId &&
+                                               ar.User.Email == secondUser.Email);
+
+                if (relationship == null)
+                    return false;
+
+                ctx
+                    .AccountRelationships
+                    .Remove(relationship);
 
                 return ctx.SaveChanges() == 1;
             }
