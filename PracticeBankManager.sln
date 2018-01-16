@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.ConsoleApp", "PracticeBankManager.ConsoleApp\PracticeBankManager.ConsoleApp.csproj", "{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Api", "PracticeBankManager.Api\PracticeBankManager.Api.csproj", "{69FCCB63-B449-45EA-A8D8-24E423C443CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Data", "PracticeBankManager.Data\PracticeBankManager.Data.csproj", "{EE7E1809-4253-46F3-84B5-D4A55F13501D}"
@@ -13,16 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Models", "PracticeBankManager.Models\PracticeBankManager.Models.csproj", "{6F96462D-0EB2-4201-A5BF-23E9E26A4272}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.ConsoleApp", "PracticeBankManager.ConsoleApp\PracticeBankManager.ConsoleApp.csproj", "{FC37CFB9-1F7F-4B68-848F-3BB07F8130B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69FCCB63-B449-45EA-A8D8-24E423C443CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69FCCB63-B449-45EA-A8D8-24E423C443CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69FCCB63-B449-45EA-A8D8-24E423C443CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{6F96462D-0EB2-4201-A5BF-23E9E26A4272}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F96462D-0EB2-4201-A5BF-23E9E26A4272}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F96462D-0EB2-4201-A5BF-23E9E26A4272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC37CFB9-1F7F-4B68-848F-3BB07F8130B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC37CFB9-1F7F-4B68-848F-3BB07F8130B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC37CFB9-1F7F-4B68-848F-3BB07F8130B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC37CFB9-1F7F-4B68-848F-3BB07F8130B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -235,7 +235,6 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -313,6 +312,20 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeBankManager.Data\PracticeBankManager.Data.csproj">
+      <Project>{ee7e1809-4253-46f3-84b5-d4a55f13501d}</Project>
+      <Name>PracticeBankManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PracticeBankManager.Models\PracticeBankManager.Models.csproj">
+      <Project>{6f96462d-0eb2-4201-a5bf-23e9e26a4272}</Project>
+      <Name>PracticeBankManager.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PracticeBankManager.Services\PracticeBankManager.Services.csproj">
+      <Project>{7d6ec6bc-6318-4ea0-99f1-d3cefdd102d7}</Project>
+      <Name>PracticeBankManager.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
