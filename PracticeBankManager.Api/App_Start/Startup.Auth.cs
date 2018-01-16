@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using PracticeBankManager.Api.Providers;
 using PracticeBankManager.Api.Models;
+using PracticeBankManager.Data;
 
 namespace PracticeBankManager.Api
 {

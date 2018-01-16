@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using PracticeBankManager.Api.Models;
 using PracticeBankManager.Api.Providers;
 using PracticeBankManager.Api.Results;
+using PracticeBankManager.Data;
 
 namespace PracticeBankManager.Api.Controllers
 {
