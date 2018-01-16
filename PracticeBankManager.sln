@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.ConsoleApp", "PracticeBankManager.ConsoleApp\PracticeBankManager.ConsoleApp.csproj", "{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Api", "PracticeBankManager.Api\PracticeBankManager.Api.csproj", "{69FCCB63-B449-45EA-A8D8-24E423C443CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Data", "PracticeBankManager.Data\PracticeBankManager.Data.csproj", "{EE7E1809-4253-46F3-84B5-D4A55F13501D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Services", "PracticeBankManager.Services\PracticeBankManager.Services.csproj", "{7D6EC6BC-6318-4EA0-99F1-D3CEFDD102D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeBankManager.Models", "PracticeBankManager.Models\PracticeBankManager.Models.csproj", "{6F96462D-0EB2-4201-A5BF-23E9E26A4272}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F99FDFC-B7B7-4231-8A19-390E7C6E1E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69FCCB63-B449-45EA-A8D8-24E423C443CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69FCCB63-B449-45EA-A8D8-24E423C443CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69FCCB63-B449-45EA-A8D8-24E423C443CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69FCCB63-B449-45EA-A8D8-24E423C443CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7E1809-4253-46F3-84B5-D4A55F13501D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7E1809-4253-46F3-84B5-D4A55F13501D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7E1809-4253-46F3-84B5-D4A55F13501D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7E1809-4253-46F3-84B5-D4A55F13501D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6EC6BC-6318-4EA0-99F1-D3CEFDD102D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6EC6BC-6318-4EA0-99F1-D3CEFDD102D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6EC6BC-6318-4EA0-99F1-D3CEFDD102D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6EC6BC-6318-4EA0-99F1-D3CEFDD102D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F96462D-0EB2-4201-A5BF-23E9E26A4272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F96462D-0EB2-4201-A5BF-23E9E26A4272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F96462D-0EB2-4201-A5BF-23E9E26A4272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F96462D-0EB2-4201-A5BF-23E9E26A4272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

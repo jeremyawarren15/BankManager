@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PracticeBankManager.ConsoleApp")]
+[assembly: AssemblyTitle("PracticeBankManager.Services")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PracticeBankManager.ConsoleApp")]
+[assembly: AssemblyProduct("PracticeBankManager.Services")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fc37cfb9-1f7f-4b68-848f-3bb07f8130b8")]
+[assembly: Guid("7d6ec6bc-6318-4ea0-99f1-d3cefdd102d7")]
 
 // Version information for an assembly consists of the following four values:
 //
