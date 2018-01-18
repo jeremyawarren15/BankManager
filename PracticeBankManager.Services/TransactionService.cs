@@ -50,10 +50,17 @@ namespace PracticeBankManager.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
+                var accountService = new AccountService(_userId);
+
+                var accounts = accountService.GetAccounts();
+
+                var accountIds = accounts.Select(account => account.AccountId).ToList();
+
                 var transactions =
                     ctx
                         .Transactions
-                        .Where(t => t.AccountId == accountId)
+                        .Where(t => accountIds.Contains(t.AccountId) &&
+                                    t.AccountId == accountId)
                         .Select(t =>
                             new TransactionListItem()
                             {
